@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .bg-gradient-brand {
+    @apply bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600;
+  }
+
+  .text-gradient-brand {
+    @apply bg-gradient-to-r from-cyan-500 via-blue-600 to-purple-600 bg-clip-text text-transparent;
+  }
+
+  .border-gradient-brand {
+    @apply border-transparent bg-clip-border;
+    background-image: linear-gradient(to right, #06b6d4, #2563eb, #9333ea);
+  }
+
+  .glow-brand {
+    box-shadow: 0 0 20px rgba(59, 130, 246, 0.4);
+  }
+}
